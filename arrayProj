@@ -15,3 +15,20 @@ public class Main {
         int count0 = 0;
         int count1 = 0;
         int count2 = 0;
+	while(coor[0] != coor0 || coor[1] != coor1 || coor[2] != coor2) {
+            for (int k = 0; k < 4; k++) {
+                if (coor[0] == coor0 && coor[1] == coor1 && coor[2] == coor2) {
+                    System.out.println("Finally! We found all of them");
+                    break;
+                }
+                if (coor[0] == coor0) {
+                    count0++;
+                }
+                if (coor[1] == coor1) {
+                    count1++;
+                }
+                if (coor[2] == coor2) {
+                    count2++;
+                }
+	    }
+        }
