@@ -79,6 +79,7 @@ public class Main {
                     }
 
                 }
+          
 		if (k == 3 && (coor[0] != coor0 || coor[1] != coor1 || coor[2] != coor2)) {
                     System.out.println("Unfortunately,cargos aren't found");
                     System.out.print("Enter coordinates: ");
@@ -89,9 +90,10 @@ public class Main {
                         coor[i] = scanner.nextInt();
                     }
                     count0=1;
-                    count1=0;
+                    count1=1;
                     count2=0;
                 }
-	   
-	}
-   }
+            }
+	 }
+    }
+}
