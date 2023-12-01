@@ -9,13 +9,13 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             coor[i] = scanner.nextInt();
         }
-	int coor0 = (int) Math.floor(Math.random() * (7 - 1 + 1) + 1);
+        int coor0 = (int) Math.floor(Math.random() * (7 - 1 + 1) + 1);
         int coor1 = (int) Math.floor(Math.random() * (7 - 1 + 1) + 1);
         int coor2 = (int) Math.floor(Math.random() * (7 - 1 + 1) + 1);
         int count0 = 0;
         int count1 = 0;
         int count2 = 0;
-	while(coor[0] != coor0 || coor[1] != coor1 || coor[2] != coor2) {
+        while(coor[0] != coor0 || coor[1] != coor1 || coor[2] != coor2) {
             for (int k = 0; k < 4; k++) {
                 if (coor[0] == coor0 && coor[1] == coor1 && coor[2] == coor2) {
                     System.out.println("Finally! We found all of them");
@@ -30,8 +30,7 @@ public class Main {
                 if (coor[2] == coor2) {
                     count2++;
                 }
-	    
-         	if (coor[0] != coor0 || coor[1] != coor1 || coor[2] != coor2) {
+                if (coor[0] != coor0 || coor[1] != coor1 || coor[2] != coor2) {
 
                     if (count2 == 0 && count1 == 0 && count0 == 0) {
                         System.out.println("Coordinates are wrong");
@@ -79,8 +78,7 @@ public class Main {
                     }
 
                 }
-          
-		if (k == 3 && (coor[0] != coor0 || coor[1] != coor1 || coor[2] != coor2)) {
+                if (k == 3 && (coor[0] != coor0 || coor[1] != coor1 || coor[2] != coor2)) {
                     System.out.println("Unfortunately,cargos aren't found");
                     System.out.print("Enter coordinates: ");
                     coor0 = (int) Math.floor(Math.random() * (7 - 1 + 1) + 1);
@@ -90,10 +88,10 @@ public class Main {
                         coor[i] = scanner.nextInt();
                     }
                     count0=0;
-                    count1=1;
+                    count1=0;
                     count2=0;
                 }
             }
-	 }
+        }
     }
 }
